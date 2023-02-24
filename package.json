@@ -1,0 +1,14 @@
+{
+  "name": "m04uf2_2223",
+  "version": "1.0.0",
+  "description": "Ejercicio de la asignatura de Llenguatges de Marques UF2",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "mongodb": "^5.0.1"
+  }
+}
