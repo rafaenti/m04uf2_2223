@@ -5,6 +5,7 @@
 import React from 'react';
 
 import TaskItem from './TaskItem';
+import List from '@mui/material/List';
 
 class TaskList extends React.Component{
 	constructor (props){
@@ -17,16 +18,18 @@ class TaskList extends React.Component{
 
 	render(){
 		console.log("render");
+		let counter = -1;
 		const tasks = this.state.items.map(task => {
+			counter++;
 			return (
-				<TaskItem text={task} />
+				<TaskItem text={task} num_task={counter} onRemoveTask={this.props.onRemoveTask} />
 			);
 		});
 
 		return (
-			<ol>
+			<List>
 			{tasks}
-			</ol>
+			</List>
 		);
 	}
 }
